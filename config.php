@@ -18,8 +18,8 @@ $CFG->dboptions = array (
   'dbcollation' => 'utf8mb4_unicode_ci',
 );
 
-$CFG->wwwroot   = 'http://localhost/moodle';
-$CFG->dataroot  = 'D:\\xammp\\moodledata';
+$CFG->wwwroot   = 'http://localhost/aoap';
+$CFG->dataroot  = 'C:\\xampp\\htdocs\\moodledata';
 $CFG->admin     = 'admin';
 
 $CFG->directorypermissions = 0777;
