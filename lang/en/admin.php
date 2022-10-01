@@ -863,7 +863,7 @@ $string['modsettings'] = 'Manage activities';
 $string['modulesecurity'] = 'Module security';
 $string['multilangforceold'] = 'Force old multilang syntax: &lt;span&gt; without the class="multilang" and &lt;lang&gt;';
 $string['mustenablestats'] = 'Statistics have not yet been enabled on this site.';
-$string['mycourses'] = 'My courses';
+$string['mycourses'] = 'My Courses';
 $string['mycoursesperpage'] = 'Number of courses';
 $string['mydashboard'] = 'System default dashboard';
 $string['mymoodle'] = 'Dashboard';

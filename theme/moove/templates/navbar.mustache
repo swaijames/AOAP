@@ -21,6 +21,7 @@
     This template renders the top navbar.
 
     Example context (json):
+
     {
         "output": {
             "should_display_navbar_logo": true,
@@ -43,25 +44,31 @@
                 "isactive": true
             },
             {
-                "text": "Site home",
+                "text": "Site Home",
                 "url": "/",
                 "isactive": false
             },
             {
-                "text": "My courses",
+                "text": "My Courses",
                 "url": "/course",
                 "isactive": false
             }
         ]
     }
 }}
+
+
+
 <nav class="navbar fixed-top navbar-light bg-white navbar-expand shadow" aria-label="{{#str}}sitemenubar, admin{{/str}}">
+
 
     <button class="navbar-toggler aabtn d-block d-md-none px-1 my-1 border-0" data-toggler="drawers" data-action="toggle" data-target="theme_moove-drawers-primary">
         <span class="navbar-toggler-icon"></span>
         <span class="sr-only">{{#str}}sidepanel, core{{/str}}</span>
     </button>
+    
 
+   
     <a href="{{{ config.homeurl }}}" class="navbar-brand d-none d-md-flex align-items-center m-0 mr-4 p-0 aabtn">
         {{# output.should_display_logo }}
             <img src="{{output.get_logo}}" class="logo mr-1" alt="{{sitename}}">
@@ -70,12 +77,14 @@
             {{{ sitename }}}
         {{/ output.should_display_logo }}
     </a>
+    
 
     {{#primarymoremenu}}
         <div class="primary-navigation">
             {{> core/moremenu}}
         </div>
     {{/primarymoremenu}}
+    
 
     <ul class="navbar-nav d-none d-md-flex my-1 px-1">
         <!-- page_heading_menu -->
@@ -104,6 +113,7 @@
     </div>
 </nav>
 
+
 {{#secondarymoremenu}}
     <div class="secondary-navigation d-print-none moove">
         <div class="moove-container-fluid">
@@ -111,5 +121,10 @@
         </div>
     </div>
 {{/secondarymoremenu}}
+
+
+ <a href="" class="navbar d-none d-md-flex align-items-center m-0 mr-4 p-0 absolute">
+     <img src="../pix/banner.png" class="img-fluid" alt="">
+    </a>
 
 {{> theme_moove/primary-drawer-mobile }}
