@@ -1223,7 +1223,7 @@ class course_test extends \advanced_testcase {
 
         $upload = new tool_uploadcourse_course($mode, $updatemode, array_merge($uploaddata, [
             'category' => $category->id,
-            'fullname' => 'My course',
+            'fullname' => 'My Course',
         ]));
 
         // Enrolment validation isn't performed during 'prepare' for new courses.

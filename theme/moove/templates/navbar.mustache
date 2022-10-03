@@ -1,3 +1,6 @@
+
+
+
 {{!
     This file is part of Moodle - http://moodle.org/
 
@@ -57,9 +60,15 @@
     }
 }}
 
+<nav class="navbar-banner fixed-top navbar-light bg-dark">
+  {{#items}}
+  {{#link}}
+    <div><img src="{{../pix/banner.png}}"></div>
+  {{/link}}
+{{/items}}
+</nav>
 
-
-<nav class="navbar fixed-top navbar-light bg-white navbar-expand shadow" aria-label="{{#str}}sitemenubar, admin{{/str}}">
+<nav class="navbar navbar-light bg-white navbar-expand shadow" aria-label="{{#str}}sitemenubar, admin{{/str}}" style="margin-top: 4rem">
 
 
     <button class="navbar-toggler aabtn d-block d-md-none px-1 my-1 border-0" data-toggler="drawers" data-action="toggle" data-target="theme_moove-drawers-primary">
@@ -77,6 +86,8 @@
             {{{ sitename }}}
         {{/ output.should_display_logo }}
     </a>
+
+    <img src="../pix/banner.png" alt="">
     
 
     {{#primarymoremenu}}
@@ -114,17 +125,14 @@
 </nav>
 
 
+
+<div class="" style="margin-top: -8rem">
+
 {{#secondarymoremenu}}
     <div class="secondary-navigation d-print-none moove">
         <div class="moove-container-fluid">
             {{> core/moremenu}}
         </div>
     </div>
-{{/secondarymoremenu}}
+{{/secondarymoremenu}}</div>
 
-
- <a href="" class="navbar d-none d-md-flex align-items-center m-0 mr-4 p-0 absolute">
-     <img src="../pix/banner.png" class="img-fluid" alt="">
-    </a>
-
-{{> theme_moove/primary-drawer-mobile }}

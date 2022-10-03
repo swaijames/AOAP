@@ -3,8 +3,9 @@ body {
 }
 
 #page-header {
-    margin: 1.25rem auto;
+    // margin: 1.25rem auto;
     padding: 0;
+    margin-top: 5rem;
 
     h1 {
         margin-bottom: 0;
@@ -47,6 +48,14 @@ body {
 
 .container-fluid.tertiary-navigation {
     max-width: 100%;
+}
+
+.navbar-banner{
+    // background-color: aqua !important;
+    background-image: url("../../pix/banner.png");
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    padding: 2rem;
 }
 
 a {
